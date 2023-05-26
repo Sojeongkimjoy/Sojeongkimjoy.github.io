@@ -1,13 +1,17 @@
 $(function () {
-    $(window).on('scroll', function () {
-        // 변수에 스크롤한 량을 담는다.
-        let sct = $(window).scrollTop();
-        console.log(sct);
-        if (sct > 0) {
-            $('#header').addClass('on')
-        } else {
-            $('#header').removeClass('on')
+    $('#header .gnb>ul>li').on('click', function (e) {
+        if ($('#header .gnb').hasClass('on')) {
+            e.preventDefault();
+            $(this).addClass('on').siblings().removeClass('on');
         }
+    });
 
+    $('.mopen').on('click', function () {
+        $('#header .gnb').toggleClass('on');
+        $('#header').toggleClass('on');
+    });
+
+    $(window).on('resize', function () {
+        $('#header .gnb').removeClass('on');
     })
 })
