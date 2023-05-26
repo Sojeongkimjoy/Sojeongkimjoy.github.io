@@ -1,0 +1,110 @@
+.customer .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.customer .list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 30px;
+    background: #f9f9f9;
+
+    margin: 0 0 10px 0;
+}
+
+.customer .list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 0;
+
+    border-top: 1px solid #0c4ca3;
+    border-left: 1px solid #0c4ca3;
+
+    visibility: hidden;
+
+    transition: 0.5s;
+}
+
+.customer .list:hover::before {
+    width: 100%;
+    height: 100%;
+
+    visibility: visible;
+}
+
+.customer .list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0;
+
+    border-bottom: 1px solid #0c4ca3;
+    border-right: 1px solid #0c4ca3;
+
+    visibility: hidden;
+
+    transition: 0.5s;
+}
+
+.customer .list:hover::after {
+    width: 100%;
+    height: 100%;
+
+    visibility: visible;
+}
+
+
+
+.customer .list h4 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.customer .nav {
+    display: flex;
+    max-width: 1200px;
+    padding: 0 15px;
+    height: 100px;
+    margin: 0 auto 50px auto;
+}
+
+.customer .nav>li {
+    flex: 1;
+}
+
+.customer .nav>li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #0c4ca3;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.customer .nav>li:hover::after {
+    width: 100%;
+}
+
+.customer .nav>li a {
+    /* 요소를 가운데 오게하는 옛날 방식 */
+    display: block;
+    text-align: center;
+    line-height: 100px;
+}
+
+.customer .nav>li~li {
+    border-left: 1px solid #f9f9f9;
+}

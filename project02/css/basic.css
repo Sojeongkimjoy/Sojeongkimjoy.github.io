@@ -1,0 +1,213 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sec {
+    padding: px 0;
+}
+
+.sec .tit {
+    margin: 0 auto 30px auto;
+}
+
+.sec .tit h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sec .tit p {
+    font-size: 15px;
+    word-break: keep-all;
+    line-height: 19px;
+}
+
+body {
+    min-height: 150vh;
+}
+
+.wrap {}
+
+#header {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+#header .gnb {
+    margin: 0 0 0 auto;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+#header .service {
+    margin: 0 0 0 50px;
+}
+
+
+
+h2 {
+    margin: 0 0 10px 0;
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    color: gray;
+    font-size: 15px;
+    margin: 10px auto 40px auto;
+}
+
+
+#main_visual .itm {
+    height: 600px;
+}
+
+#main_visual .itm01 {
+    background: url(../images/hyundai_reunion_kv_w.jpg)no-repeat center center/cover;
+
+}
+
+#main_visual .itm02 {
+    background: url(../images/car01.jpg)no-repeat center center/cover;
+
+}
+
+#main_visual .itm03 {
+    background: url(../images/car01.jpg)no-repeat center center/cover;
+
+}
+
+#main_visual .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 0;
+    width: 100px;
+    height: 100px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#main_visual .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#main_visual .slick-next {
+    margin: 0 0 0 700px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+#main_visual .slick-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#main_visual .slick-dots li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+#main_visual .slick-dots li button {
+    background: transparent;
+    color: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 0px;
+    width: px;
+    height: 15px;
+    border: 1px solid #fff;
+    outline: none;
+}
+
+#main_visual .slick-dots li.slick-active button {
+    background: #fff;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.tit {
+    text-align: center;
+    margin: 150px 0 0 0;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.strong {
+    color: #ddd;
+}
+
+.content {
+    background: #fff;
+}
+
+.content .con {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.content .con figure {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content figure .cover {
+    position: absolute;
+    inset: 0 auto auto 100%;
+    width: 100%;
+    height: 100%;
+    /* background: rgb(0, 0, 255);
+    opacity: 0.5; */
+
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(0, 4, 219, 0.753);
+    color: #ffffff;
+    padding: 50px 30px;
+
+    transition: 0.5s;
+}
+
+.content .cover a {
+    background: #333;
+    padding: 5px 10px;
+    margin: auto 0 0 0;
+    align-self: flex-start;
+}
+
+.content figure:hover .cover {
+    inset: 0 auto auto 0;
+}
